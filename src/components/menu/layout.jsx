@@ -10,11 +10,9 @@ export const Layout = ({ children }) => {
   return (
     <>
       
-        <NavBar />         
+        <NavBar children = {children} />         
  
-      <div className="page-content p-5" id="content"> 
-            {children}
-       </div>
+   
     </>
   );
 };

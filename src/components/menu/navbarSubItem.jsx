@@ -1,51 +1,29 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 
-export const NavbarSubItem = ({item}) => {
+export const NavbarSubItem = ({item,onClickMenu}) => {
 const [subItem, setSubItem] = useState(item)
 const [isActive, setisActive] = useState(false) 
 
 const onMouseOver = (e) => { 
-  console.log('entro a over');
-  setisActive(true)
+   setisActive(true)
   }
+ 
 
-  
-  
-
-  const onClick = () => { 
-      
-    // if(seleccionado){
-      setisActive(true)
-    // }else{
-      console.log('hijo click sub item item');
-//        setmostrar(false)
-    // }
-
-  }
-
-
-  const verificar = () => { 
-      
-    // if(seleccionado){
-    //   setisActive(true)
-    // }else{
-      setisActive(false)
-//        setmostrar(false)
-    // }
-
+  const onMouseOut = () => {  
+      setisActive(false)   
   }
 
 
 
   return (
-    <li className="nav-item"
-      //onClick={()=>onClick()}
+    <li className="nav-item" 
        onMouseOver={(e)=>onMouseOver(e)} 
-       onMouseOut={()=>verificar()}  
+       onMouseOut={onMouseOut} 
+       onClick={onClickMenu} 
       >
         
-        <Link className={isActive ? 'n2 nav-link text-dark   active2' : 'n2 nav-link text-dark  '}
+        <Link className={isActive ? 'n2 nav-link text-dark menu_active_sub' : 'n2 nav-link text-dark'}
          to={subItem.url}>{subItem.desc} </Link>    
     </li>
   )
