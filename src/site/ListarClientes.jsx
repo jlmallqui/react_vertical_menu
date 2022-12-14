@@ -20,17 +20,17 @@ export const ListarClientes = () => {
   const [clientes, setclientes] = useState([])
 
   
-  useEffect(() => {
-    fetch(
-      "https://jsonplaceholder.typicode.com/users")
-              .then((res) => res.json())
-              .then((json) => {
-                  setclientes(json) 
-                  });
+  // useEffect(() => {
+  //   fetch(
+  //     "https://jsonplaceholder.typicode.com/users")
+  //             .then((res) => res.json())
+  //             .then((json) => {
+  //                 setclientes(json) 
+  //                 });
               
   
      
-  }, [ ])
+  // }, [ ])
   
   
  

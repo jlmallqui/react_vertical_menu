@@ -12,7 +12,7 @@
 export const Home = () => {
   return (    
   <>        
-    <h1>Lorem Ipsum</h1>
+    <h1>Lorem Ipsum Home</h1>
     <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."</h3>
 

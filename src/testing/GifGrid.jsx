@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import {getGifs} from './helpers/GetGif'
+import {getGifs} from '../helpers/GetGif'
 import {GifItem } from "./GifItem";
 
 

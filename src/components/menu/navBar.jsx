@@ -27,7 +27,7 @@ const menus = [
     {
         id: "2",
         desc: "Clientes",
-        url: "/customers",
+        url: "#",
         sub: [
             {
                 id: "10",
@@ -44,7 +44,7 @@ const menus = [
     {
         id: "3",
         desc: "Tablas Generales",
-        url: "/commons"
+        url: "#"
     },
     {
         id: "4",
@@ -88,11 +88,11 @@ export const NavBar = ({ children }) => {
     const [isActive, setisActive] = useState(false)
     const liStyle = { float: 'right' }
 
-    sessionStorage.setItem("item_key", '123456');
-    var item_value = sessionStorage.getItem("item_key");
-    console.log(item_value);
+    // sessionStorage.setItem("item_key", '123456');
+    // var item_value = sessionStorage.getItem("item_key");
+    // console.log(item_value);
 
-    localStorage.setItem("key", "jsoe luis mallqui")
+    // localStorage.setItem("key", "jsoe luis mallqui")
     const onClick = () => {
         setisActive(!isActive)
     }

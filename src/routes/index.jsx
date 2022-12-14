@@ -1,9 +1,9 @@
 // routes.js
 import { Routes, Route } from "react-router-dom";
-import { Layout } from "./components/menu/layout";  
+import { Layout } from "../components/menu/layout";  
 
-import {Home,Contact,Cliente} from './site/sites'
-import {ListarClientes} from './site/ListarClientes'
+import {Home,Contact,Cliente} from '../site/sites'
+import {ListarClientes} from '../site/ListarClientes'
 
 export const AdminRouter = () => {
 
@@ -11,7 +11,7 @@ export const AdminRouter = () => {
 return (
     <>
       <Layout>
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Contact/" element={<Contact />} />
@@ -23,6 +23,8 @@ return (
   );
 
 }
+
+
 
 
 
